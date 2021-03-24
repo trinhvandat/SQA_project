@@ -32,6 +32,10 @@ public class CustomerInvoice extends BaseEntity{
     @Column(name = "time_using")
     private LocalDateTime timeUsing = LocalDateTime.now();
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

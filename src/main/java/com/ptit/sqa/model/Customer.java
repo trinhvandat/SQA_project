@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "customer")
@@ -33,6 +34,9 @@ public class Customer extends BaseEntity{
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "address_id")
     private Address address;
+
+    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
+    private List<CustomerInvoice> invoices;
 
     @Override
     public boolean equals(Object o) {
