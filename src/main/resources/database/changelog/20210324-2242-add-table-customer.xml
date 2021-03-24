@@ -1,0 +1,44 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="20210324-2242-001" author="Leonard">
+        <createTable tableName="customer">
+            <column name="customer_id" type="INT" autoIncrement="true">
+                <constraints primaryKeyName="pk_customer_id" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(256)"/>
+            <column name="email" type="VARCHAR(256)"/>
+            <column name="phone_number" type="VARCHAR(10)"/>
+            <column name="address_id" type="INT"/>
+            <column name="create_date" type="TIMESTAMP"/>
+            <column name="update_date" type="TIMEStamp"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210324-2242-002" author="Leonard">
+        <createTable tableName="address">
+            <column name="address_id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="pk_address_id"/>
+            </column>
+            <column name="number_house" type="VARCHAR(128)"/>
+            <column name="street" type="VARCHAR(128)"/>
+            <column name="district" type="VARCHAR(128)"/>
+            <column name="city" type="VARCHAR(128)"/>
+            <column name="create_date" type="TIMESTAMP"/>
+            <column name="update_date" type="TIMEStamp"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210324-2242-003" author="Leonard">
+        <addForeignKeyConstraint baseTableName="customer" baseColumnNames="address_id"
+                                 constraintName="fk_customer_relation_address_id"
+                                 referencedTableName="address" referencedColumnNames="address_id"/>
+    </changeSet>
+
+</databaseChangeLog>

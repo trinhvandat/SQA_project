@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  mysql-database:
+    image: mysql
+    container_name: sqa_db
+    volumes:
+      - db_sqa:/var/lib/mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: sqa_04
+      MYSQL_USER: sqa_04
+      MYSQL_PASSWORD: aibles#2021
+volumes:
+  db_sqa: {}
