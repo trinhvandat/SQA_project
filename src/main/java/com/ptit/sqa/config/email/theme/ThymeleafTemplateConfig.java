@@ -1,4 +1,4 @@
-package com.ptit.sqa.config;
+package com.ptit.sqa.config.email.theme;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
