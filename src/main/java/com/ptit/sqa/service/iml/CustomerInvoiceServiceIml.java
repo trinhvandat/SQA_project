@@ -2,6 +2,8 @@ package com.ptit.sqa.service.iml;
 
 import com.ptit.sqa.conponent.MappingHelper;
 import com.ptit.sqa.dto.response.CustomerInvoiceDTO;
+import com.ptit.sqa.exception.WaterAppException;
+import com.ptit.sqa.exception.WaterError;
 import com.ptit.sqa.model.Customer;
 import com.ptit.sqa.model.CustomerInvoice;
 import com.ptit.sqa.repository.CustomerInvoiceRepository;
@@ -38,7 +40,7 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
                     return customer;
                 })
                 .orElseThrow(() -> {
-                    throw  new RuntimeException("Customer not found");
+                    throw new WaterAppException(WaterError.CUSTOMER_NOT_FOUND);
                 });
     }
 
@@ -54,7 +56,7 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
                     return customerInvoice;
                 })
                 .orElseThrow(() -> {
-                    throw new RuntimeException("customer invoices with newIndex is null not found");
+                    throw new WaterAppException(WaterError.CUSTOMER_INVOICE_NOT_FOUND);
                 });
     }
 }
