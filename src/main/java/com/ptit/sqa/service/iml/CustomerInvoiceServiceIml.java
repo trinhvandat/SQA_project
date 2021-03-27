@@ -8,18 +8,21 @@ import com.ptit.sqa.repository.CustomerInvoiceRepository;
 import com.ptit.sqa.repository.CustomerRepository;
 import com.ptit.sqa.service.CustomerInvoiceService;
 import com.ptit.sqa.service.EmailService;
+import com.ptit.sqa.service.kafka.KafkaPublisher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
 
     private final CustomerInvoiceRepository customerInvoiceRepository;
     private final CustomerRepository customerRepository;
-    private final EmailService emailService;
+    private final KafkaPublisher kafkaPublisher;
 
     @Override
     public List<CustomerInvoiceDTO> listInvoiceThisMonth() {
@@ -45,7 +48,11 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
                     customerInvoice.setNewWaterIndexUsed(newWaterIndex);
                     return customerInvoiceRepository.save(customerInvoice);
                 })
-                .map(customerInvoice -> emailService.noticePaymentBill(customerInvoice.getCustomer()))
+                .map(customerInvoice -> {
+                    CustomerInvoiceDTO customerInvoiceDTO = MappingHelper.map(customerInvoice, CustomerInvoiceDTO.class);
+                    kafkaPublisher.sendMessage(customerInvoiceDTO);
+                    return customerInvoice;
+                })
                 .orElseThrow(() -> {
                     throw new RuntimeException("customer invoices with newIndex is null not found");
                 });
