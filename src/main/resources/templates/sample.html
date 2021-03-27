@@ -5,10 +5,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
-
-    <!-- use the font -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -17,27 +14,24 @@
     </style>
 </head>
 <body>
-<p th:text="${'Hello Dear ' + name}"></p>
-
-<p th:if="${name.length() > 5}">
-    Wow! You've got a long name (more than 5 chars)!
-</p>
+<p th:text="${'Thân Gửi ' + name + ','}"></p>
 <p>
-    You have been successfully subscribed to the <b>Fake newsletter</b> on
-    <span th:text="${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm')}"></span>
+    <b>Công ty nước sạch Thủy Long </b>thông báo bạn có một hóa đơn tiền nước sắp đến hạn thanh toán vào ngày 21 tháng này.
 </p>
 
-<p>
-    You can find <b>your inlined image</b> just below this text.
-</p>
-<p>
+<p>Thông tin hóa đơn như sau:</p>
 
-    <a href="https://medium.com/@nuwanthafernando95">
-        <img src="https://raw.githubusercontent.com/thymeleaf/thymeleaf-dist/master/src/artwork/thymeleaf%202016/thymeleaf_logo_white.png" alt="htts://javabydeveloper.com" height="110" width="500"/>
-    </a>
-</p>
+<p th:text="${'Họ tên khách hàng: ' + name}"></p>
+<p th:text="${'Địa chỉ: ' + address}"></p>
+<p th:text="${'Chỉ số cũ: ' + oldIndex}"></p>
+
+<p th:text="${'Chỉ số mới: ' + newIndex}"/>
+<p th:text="${'Thành tiền(đã bao gồm thuế VAT): ' + total}"/>
+
+<p>Làm ơn thanh toán đúng hạn để việc sử dụng nước của quý khách không bị gián đoạn.</p>
+
 <p>
-    Regards, <br />
+    Trân Trọng, <br />
     <em th:text="${sign}"></em>
 <p th:text="${location}"></p>
 </p>
