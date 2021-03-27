@@ -1,22 +1,23 @@
 package com.ptit.sqa.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.Objects;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "customer_invoice")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerInvoice extends BaseEntity{
+public class CustomerInvoice extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +25,7 @@ public class CustomerInvoice extends BaseEntity{
     private int id;
 
     @Column(name = "new_water_index_used")
-    private int newWaterIndexUsed;
+    private Integer newWaterIndexUsed;
 
     @Column(name = "old_water_index_used")
     private int oldWaterIndexUsed;
@@ -32,7 +33,7 @@ public class CustomerInvoice extends BaseEntity{
     @Column(name = "time_using")
     private LocalDateTime timeUsing = LocalDateTime.now();
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
