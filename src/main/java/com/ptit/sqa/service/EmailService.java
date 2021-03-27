@@ -1,7 +1,7 @@
 package com.ptit.sqa.service;
 
-import com.ptit.sqa.model.Customer;
+import com.ptit.sqa.dto.response.CustomerInvoiceDTO;
 
 public interface EmailService {
-    boolean noticePaymentBill(Customer customer);
+    boolean noticePaymentBill(CustomerInvoiceDTO invoice);
 }
