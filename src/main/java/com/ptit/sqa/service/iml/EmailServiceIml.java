@@ -1,10 +1,10 @@
 package com.ptit.sqa.service.iml;
 
-import com.ptit.sqa.model.Customer;
+import com.ptit.sqa.dto.response.CustomerInvoiceDTO;
+import com.ptit.sqa.model.CustomerInvoice;
 import com.ptit.sqa.model.Mail;
 import com.ptit.sqa.service.EmailService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -31,8 +31,8 @@ public class EmailServiceIml implements EmailService {
     private final String WATER_COMPANY_SIGN = "Water company";
 
     @Override
-    public boolean noticePaymentBill(Customer customer) {
-        Mail mail = buildMailEntity(customer);
+    public boolean noticePaymentBill(CustomerInvoiceDTO invoice) {
+        Mail mail = buildMailEntity(invoice);
         MimeMessage message = emailSender.createMimeMessage();
         MimeMessageHelper helper = null;
         try {
@@ -53,14 +53,17 @@ public class EmailServiceIml implements EmailService {
         }
     }
 
-    private Mail buildMailEntity(Customer customer){
+    private Mail buildMailEntity(CustomerInvoiceDTO invoice){
         Map<String, Object> properties = new HashMap<String, Object>();
-        properties.put("name", customer.getName());
-        properties.put("location", customer.getAddress().getCity());
+        properties.put("name", invoice.getCustomer().getName());
+        properties.put("location", invoice.getCustomer().getAddress().getCity());
         properties.put("sign", WATER_COMPANY_SIGN);
+        properties.put("oldIndex", invoice.getOldWaterIndexUsed());
+        properties.put("newIndex", invoice.getNewWaterIndexUsed());
+        properties.put("total", getTotal(invoice.getOldWaterIndexUsed(), invoice.getNewWaterIndexUsed()));
 
         Mail mail = Mail.builder()
-                .to(customer.getEmail())
+                .to(invoice.getCustomer().getEmail())
                 .htmlTemplate(new Mail.HtmlTemplate("sample", properties))
                 .subject("Water bill payment notice")
                 .build();
@@ -71,6 +74,11 @@ public class EmailServiceIml implements EmailService {
         Context context = new Context();
         context.setVariables(mail.getHtmlTemplate().getProps());
         return templateEngine.process(mail.getHtmlTemplate().getTemplate(), context);
+    }
+
+    private float getTotal(int oldIndex, int newIndex){
+        float totalWithoutVAT = (float) ((newIndex - oldIndex) * 7000);
+        return (float) (totalWithoutVAT * 0.9);
     }
 
 }
