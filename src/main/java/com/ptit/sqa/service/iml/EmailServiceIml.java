@@ -1,7 +1,7 @@
 package com.ptit.sqa.service.iml;
 
+import com.ptit.sqa.dto.response.AddressDTO;
 import com.ptit.sqa.dto.response.CustomerInvoiceDTO;
-import com.ptit.sqa.model.CustomerInvoice;
 import com.ptit.sqa.model.Mail;
 import com.ptit.sqa.service.EmailService;
 import lombok.RequiredArgsConstructor;
@@ -61,6 +61,7 @@ public class EmailServiceIml implements EmailService {
         properties.put("oldIndex", invoice.getOldWaterIndexUsed());
         properties.put("newIndex", invoice.getNewWaterIndexUsed());
         properties.put("total", getTotal(invoice.getOldWaterIndexUsed(), invoice.getNewWaterIndexUsed()));
+        properties.put("address", getAddress(invoice.getCustomer().getAddress()));
 
         Mail mail = Mail.builder()
                 .to(invoice.getCustomer().getEmail())
@@ -68,6 +69,16 @@ public class EmailServiceIml implements EmailService {
                 .subject("Water bill payment notice")
                 .build();
         return mail;
+    }
+
+    private String getAddress(AddressDTO address){
+        return String.format(
+                "%s, %s, %s, %s",
+                address.getNumberHouse(),
+                address.getStreet(),
+                address.getDistrict(),
+                address.getCity()
+        );
     }
 
     private String getHtmlContent(Mail mail) {
