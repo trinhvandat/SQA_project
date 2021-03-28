@@ -1,0 +1,326 @@
+2021-03-28 11:45:13.686 ERROR 12579 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.sql' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.sql
+    Value: error, info
+    Origin: class path resource [application.properties] - 36:19
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2021-03-28 11:45:46.910 ERROR 12672 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.sql' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.sql
+    Value: ERROR, INFO
+    Origin: class path resource [application.properties] - 36:19
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2021-03-28 11:46:02.599 ERROR 12724 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.database' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.database
+    Value: ERROR, INFO
+    Origin: class path resource [application.properties] - 36:24
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2021-03-28 11:46:10.434  INFO 12783 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Starting SqaWaterMoneyManagementApplication using Java 14.0.2 on leonard with PID 12783 (/home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management/target/classes started by leonard in /home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management)
+2021-03-28 11:46:10.436  INFO 12783 --- [main] c.p.s.SqaWaterMoneyManagementApplication : No active profile set, falling back to default profiles: default
+2021-03-28 11:46:11.089  INFO 12783 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-28 11:46:11.126  INFO 12783 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2021-03-28 11:46:11.492  INFO 12783 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-28 11:46:11.498  INFO 12783 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-28 11:46:11.498  INFO 12783 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-28 11:46:11.553  INFO 12783 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2021-03-28 11:46:11.554  INFO 12783 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1081 ms
+2021-03-28 11:46:11.636  INFO 12783 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-28 11:46:11.848  INFO 12783 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-28 11:46:12.052  INFO 12783 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-03-28 11:46:12.387  INFO 12783 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-03-28 11:46:12.432  INFO 12783 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-03-28 11:46:12.438  INFO 12783 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-03-28 11:46:12.439  WARN 12783 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-03-28 11:46:12.448  INFO 12783 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-03-28 11:46:12.505  INFO 12783 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-28 11:46:12.529  INFO 12783 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-28 11:46:12.591  INFO 12783 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-28 11:46:12.671  INFO 12783 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-03-28 11:46:12.984  INFO 12783 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-28 11:46:12.989  INFO 12783 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-28 11:46:13.339  WARN 12783 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-28 11:46:13.421  INFO 12783 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-28 11:46:13.601  INFO 12783 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-03-28 11:46:13.623  INFO 12783 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-03-28 11:46:13.623  INFO 12783 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-03-28 11:46:13.623  INFO 12783 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1616906773622
+2021-03-28 11:46:13.813  INFO 12783 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-03-28 11:46:13.836  INFO 12783 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-03-28 11:46:13.836  INFO 12783 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-03-28 11:46:13.836  INFO 12783 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1616906773836
+2021-03-28 11:46:13.837  INFO 12783 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-03-28 11:46:13.839  INFO 12783 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-03-28 11:46:13.851  INFO 12783 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2021-03-28 11:46:13.858  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: IkVrzxTZSyecSDtbJouRMQ
+2021-03-28 11:46:13.859  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-03-28 11:46:13.861  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-03-28 11:46:13.864  INFO 12783 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Started SqaWaterMoneyManagementApplication in 3.775 seconds (JVM running for 4.361)
+2021-03-28 11:46:13.872  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-03-28 11:46:13.876  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 5: {consumer-notification-group-1-8a587737-0bad-4a53-b4fc-a5683260b235=Assignment(partitions=[email-notification-0, email-notification-1])}
+2021-03-28 11:46:13.881  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation 5
+2021-03-28 11:46:13.884  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: email-notification-0, email-notification-1
+2021-03-28 11:46:13.900  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-03-28 11:46:13.902  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-03-28 11:46:13.903  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions assigned: [email-notification-0, email-notification-1]
+2021-03-28 11:46:20.193  INFO 12783 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-28 11:46:20.193  INFO 12783 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-28 11:46:20.194  INFO 12783 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-28 11:46:20.355  INFO 12783 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-03-28 11:46:20.368  WARN 12783 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-03-28 11:46:20.369  INFO 12783 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-03-28 11:46:20.369  INFO 12783 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-03-28 11:46:20.369  INFO 12783 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1616906780368
+2021-03-28 11:46:20.373  INFO 12783 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IkVrzxTZSyecSDtbJouRMQ
+2021-03-28 11:46:20.523  INFO 12783 --- [http-nio-8080-exec-2] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Nhung
+2021-03-28 11:46:20.544  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-03-28 11:46:24.548  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Nhung is: true
+2021-03-28 11:52:42.598  INFO 12783 --- [http-nio-8080-exec-4] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-03-28 11:52:42.603  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-03-28 11:52:46.184  INFO 12783 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
