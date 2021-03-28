@@ -24,7 +24,7 @@
     <changeSet id="20210324-2252-002" author="Leonard">
         <addForeignKeyConstraint baseTableName="customer_invoice" baseColumnNames="invoice_id"
                                  constraintName="fk_customer_invoice_relation_invoice_id"
-                                 referencedTableName="customer" referencedColumnNames="address_id"/>
+                                 referencedTableName="customer" referencedColumnNames="customer_id"/>
     </changeSet>
 
 </databaseChangeLog>

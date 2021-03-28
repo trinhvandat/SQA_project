@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring boot email template with Thymeleaf</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+<p th:text="${'Thân Gửi ' + name + ','}"></p>
+<p>
+    <b>Công ty nước sạch Thủy Long </b>thông báo bạn có một hóa đơn tiền nước sắp đến hạn thanh toán vào ngày 21 tháng này.
+</p>
+
+<p>Thông tin hóa đơn như sau:</p>
+
+<p th:text="${'Họ tên khách hàng: ' + name}"></p>
+<p th:text="${'Địa chỉ: ' + address}"></p>
+<p th:text="${'Chỉ số cũ: ' + oldIndex}"></p>
+
+<p th:text="${'Chỉ số mới: ' + newIndex}"/>
+<p th:text="${'Thành tiền(đã bao gồm thuế VAT): ' + total}"/>
+
+<p>Làm ơn thanh toán đúng hạn để việc sử dụng nước của quý khách không bị gián đoạn.</p>
+
+<p>
+    Trân Trọng, <br />
+    <em th:text="${sign}"></em>
+<p th:text="${location}"></p>
+</p>
+</body>
+</html>

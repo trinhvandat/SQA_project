@@ -1,12 +1,14 @@
 package com.ptit.sqa.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
@@ -15,7 +17,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer extends BaseEntity{
+public class Customer extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,12 +33,9 @@ public class Customer extends BaseEntity{
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "address_id")
     private Address address;
-
-    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
-    private List<CustomerInvoice> invoices;
 
     @Override
     public boolean equals(Object o) {
