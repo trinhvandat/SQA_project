@@ -6,10 +6,10 @@ import javax.annotation.PostConstruct;
 
 public interface ConfigurationService {
     @PostConstruct
-    void init();
+    void ConfigInit();
     Config getConfig();
     void setConfig(Config config);
-    void saveData(Config config);
-    void addLevel();
-    void deleteLevel();
+    void saveConfigToDB(Config config);
+    void addLevelToForm();
+    void deleteLevelFromForm(Integer idLevel);
 }

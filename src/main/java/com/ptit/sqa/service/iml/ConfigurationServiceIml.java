@@ -19,35 +19,41 @@ public class ConfigurationServiceIml implements ConfigurationService {
     private Config config;
 
     @Override
-    @PostConstruct
-    public void init(){
-        config=new Config(levelRepository.findAll());
+    public void ConfigInit() {
+        config = new Config(levelRepository.findAll());
     }
+
     @Override
-    public Config getConfig(){
+    public Config getConfig() {
         return this.config;
     }
+
     @Override
-    public void setConfig(Config config){
-        this.config=config;
+    public void setConfig(Config config) {
+        this.config = config;
     }
+
     @Override
-    public void saveData(Config config){
+    public void saveConfigToDB(Config config) {
         levelRepository.deleteAll();
         levelRepository.saveAll(config.getLevelList());
     }
+
     @Override
-    public void addLevel(){
-        List<Level> levelList=config.getLevelList();
-        Level level=new Level();
-        level.setId(levelList.size()+1);
+    public void addLevelToForm() {
+        List<Level> levelList = config.getLevelList();
+        Level level = new Level();
+        level.setId(levelList.size() + 1);
+        Float maxValue=levelList.get(levelList.size() - 1).getMaxValue();maxValue+=Float.valueOf(String.valueOf(0.01));
+        level.setMaxValue(maxValue);
         levelList.add(level);
         config.setLevelList(levelList);
     }
-    public void deleteLevel(){
-        List<Level> levelList=config.getLevelList();
-        if(levelList.size()>1){
-            levelList.remove(levelList.size()-1);
+
+    public void deleteLevelFromForm(Integer idLevel) {
+        List<Level> levelList = config.getLevelList();
+        if (levelList.size() > 1) {
+            levelList.remove(idLevel);
         }
         config.setLevelList(levelList);
 
