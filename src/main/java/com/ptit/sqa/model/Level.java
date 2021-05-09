@@ -25,9 +25,9 @@ public class Level extends BaseEntity implements Serializable {
     @Column(name = "level_id")
     private int id;
     @Column(name = "max_value")
-    private float maxValue;
+    private Integer maxValue;
     @Column(name = "price")
-    private int price;
+    private float price;
 
 
 }

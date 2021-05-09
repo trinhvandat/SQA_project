@@ -13,5 +13,11 @@ import lombok.Data;
 public class Config {
 
     private List<Level> levelList;
+    public Integer getMinValue(int idLevel){
+        if(idLevel==0)
+            return 0;
+        else
+            return levelList.get(idLevel-1).getMaxValue()+1;
 
+    }
 }

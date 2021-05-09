@@ -43,17 +43,44 @@ public class ConfigurationServiceIml implements ConfigurationService {
     public void addLevelToForm() {
         List<Level> levelList = config.getLevelList();
         Level level = new Level();
-        level.setId(levelList.size() + 1);
-        Float maxValue=levelList.get(levelList.size() - 1).getMaxValue();maxValue+=Float.valueOf(String.valueOf(0.01));
-        level.setMaxValue(maxValue);
-        levelList.add(level);
+        //Xử lý nếu số bậc lớn hơn 1
+        if(levelList.size()>1){
+            //config giá trị mới
+            level.setId(levelList.size());
+            int maxValue=levelList.get(levelList.size() - 2).getMaxValue();maxValue++;
+            level.setMaxValue(maxValue);
+            level.setPrice(0);
+            levelList.add(levelList.size()-1,level);
+            //config giá trị cuối
+            level=levelList.get(levelList.size()-1);
+            level.setId(levelList.size());
+            levelList.set(levelList.size()-1,level );
+        }
+        //Xử lý nếu xố bậc bằng 1
+        else{
+            //config giá trị mới
+            level.setId(levelList.size());
+            level.setMaxValue(1);
+            level.setPrice(0);
+            levelList.add(levelList.size()-1,level);
+            //config giá trị cuối
+            level=levelList.get(levelList.size()-1);
+            level.setId(levelList.size());
+            levelList.set(levelList.size()-1,level );
+        }
         config.setLevelList(levelList);
     }
 
     public void deleteLevelFromForm(Integer idLevel) {
         List<Level> levelList = config.getLevelList();
+        Level level=new Level();
         if (levelList.size() > 1) {
-            levelList.remove(idLevel);
+            levelList.remove(levelList.get(idLevel));
+            for(int i=idLevel;i<levelList.size();i++){
+                level=levelList.get(i);
+                level.setId(level.getId()-1);
+                levelList.set(i,level);
+            }
         }
         config.setLevelList(levelList);
 

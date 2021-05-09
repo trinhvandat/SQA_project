@@ -24,8 +24,8 @@ public class ConfigurationController {
         return "success";
 
     }
-    @RequestMapping("/del_level_from_form")
-    public String deleteLevelFromForm(@RequestParam(value = "id") Integer idLevel,Model model){
+    @PostMapping("/del_level_from_form/{idLevel}")
+    public String deleteLevelFromForm(@PathVariable("idLevel") Integer idLevel,Model model){
         configService.deleteLevelFromForm(idLevel);
         model.addAttribute("config",configService.getConfig());
         return "configurations";

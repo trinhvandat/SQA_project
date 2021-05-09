@@ -9,67 +9,125 @@
     <script>
         function getMin(Id) {
             var curMax = parseFloat(document.getElementById("max" + Id).value);
-            curMax += 0.01;
-            curMax = Math.round(curMax * 100) / 100;
+            curMax += 1;
             document.getElementById("min" + (Id + 1)).value = curMax;
         }
 
         function modify(Id) {
-            var str = document.getElementById("mod" + Id).innerHTML;
-            //Xử lý cho phép nhập giá trị sửa
-            if (str === "Sửa") {
-                var dis = document.getElementsByClassName("disable");
-                for (var i = 0; i < dis.length; i++) {
-                    dis[i].disabled = true;
-                }
-                document.getElementById("mod" + Id).disabled = false;
-                document.getElementById("mod" + Id).innerHTML = "Xác nhận";
-                document.getElementById("max" + Id).disabled = false;
-            }
-            //Xử lý xác minh giá trị nhập
-            else {
-                var validateResult = validate(Id);
-                //Xử lý khi giá trị hợp lệ
-                if (!Number.isNaN(Number(validateResult))) {
-                    document.getElementById("mod" + Id).innerHTML = "Sửa";
-                    document.getElementById("max" + Id).disabled = true;
-                    document.getElementById("max" + Id).value = validateResult;
-                    document.getElementById("error").style.visibility = "hidden";
-                    getMin(Id);
+            var trigger = Number(document.getElementById("mod" + Id).value);
+            //xử lý bậc cuối
+            if(document.getElementById("max"+Id)==null){
+                //Xử lý cho phép nhập giá trị sửa
+                if (trigger == 1 ) {
                     var dis = document.getElementsByClassName("disable");
                     for (var i = 0; i < dis.length; i++) {
-                        dis[i].disabled = false;
+                        dis[i].disabled = true;
                     }
+                    document.getElementById("mod" + Id).disabled = false;
+                    document.getElementById("mod" + Id).value = 2;
+                    document.getElementById("mod" + Id).innerHTML="Xác nhận";
+                    document.getElementById("price" + Id).readOnly = false;
                 }
-                //Đưa thông báo lỗi khi giá trị không hợp lệ
+                //Xử lý xác minh giá trị nhập
                 else {
-                    document.getElementById("error").innerHTML = validateResult;
-                    document.getElementById("error").style.visibility = "visible";
-                }
+                    var validateResult = validatePrice(Id);
+                    //Xử lý khi giá trị hợp lệ
+                    if (!Number.isNaN(Number(validateResult))) {
+                        document.getElementById("mod" + Id).innerHTML = "Sửa";
+                        document.getElementById("price" + Id).readOnly = true;
+                        document.getElementById("price" + Id).value = parseFloat(validateResult).toFixed(1);
+                        document.getElementById("error").style.visibility = "hidden";
+                        document.getElementById("mod" + Id).value = 1;
+                        var dis = document.getElementsByClassName("disable");
+                        for (var i = 0; i < dis.length; i++) {
+                            dis[i].disabled = false;
+                        }
+                    }
+                    //Đưa thông báo lỗi khi giá trị không hợp lệ
+                    else {
+                        document.getElementById("error").innerHTML = validateResult;
+                        document.getElementById("error").style.visibility = "visible";
+                    }
 
+                }
+            }
+            //Xử lý bậc bình thường
+            else{
+                //Xử lý cho phép nhập giá trị sửa
+                if (trigger == 1 ) {
+                    var dis = document.getElementsByClassName("disable");
+                    for (var i = 0; i < dis.length; i++) {
+                        dis[i].disabled = true;
+                    }
+                    document.getElementById("mod" + Id).disabled = false;
+                    document.getElementById("mod" + Id).value = 2;
+                    document.getElementById("mod" + Id).innerHTML="Xác nhận";
+                    document.getElementById("max" + Id).readOnly = false;
+                    document.getElementById("price" + Id).readOnly = false;
+                }
+                //Xử lý xác minh giá trị nhập
+                else {alert("1");
+                    var validateMaxValueResult = validateMaxValue(Id);alert(validateMaxValueResult);
+                    var validatePriceResult = validatePrice(Id);alert(validatePriceResult);
+                    //Xử lý khi giá trị hợp lệ
+                    if (!Number.isNaN(Number(validateMaxValueResult))&&!Number.isNaN(Number(validatePriceResult))) {
+                        document.getElementById("mod" + Id).innerHTML = "Sửa";
+                        document.getElementById("max" + Id).readOnly = true;
+                        document.getElementById("price" + Id).readOnly = true;
+                        document.getElementById("max" + Id).value = validateMaxValueResult;
+                        document.getElementById("price" + Id).value = parseFloat(validatePriceResult).toFixed(1);
+                        document.getElementById("mod" + Id).value = 1;
+                        document.getElementById("error").style.visibility = "hidden";
+                        getMin(Id);
+                        var dis = document.getElementsByClassName("disable");
+                        for (var i = 0; i < dis.length; i++) {
+                            dis[i].disabled = false;
+                        }
+                    }
+                    //Đưa thông báo lỗi khi giá trị không hợp lệ
+                    else {
+                        if(!Number.isNaN(Number(validateMaxValueResult)))
+                            document.getElementById("error").innerHTML=validatePriceResult;
+                        else
+                            document.getElementById("error").innerHTML=validateMaxValueResult;
+                        document.getElementById("error").style.visibility = "visible";
+                    }
+
+                }
             }
         }
 
-        function validate(Id) {
-            var curMax = Number(document.getElementById("max" + Id).value);
-            curMax = (Math.round(curMax * 100)) / 100;
+        function validateMaxValue(Id) {
             var preMax = (Id == 1) ? 0 : Number(document.getElementById("max" + (Id - 1)).value);
-            var nextMax = Number(document.getElementById("max" + (Id + 1)).value);
+            var curMax = (document.getElementById("max" + Id)==null) ? preMax*2 : Number(document.getElementById("max" + Id).value);
+            var nextMax = (document.getElementById("max" + (Id+1))==null) ? curMax*2 : Number(document.getElementById("max" + (Id + 1)).value);
             //Xác thực là số và lớn hơn 0
-            if (Number.isNaN(curMax)) {
-                return "Giá trị nhập phải là số";
+            var regEx=/^[0-9]+$/;
+            if (!regEx.test(curMax)||curMax<=0) {
+                return "Giá trị nhập phải là số nguyên dương";
             }
             //Xác thực không bỏ trống
             else if (document.getElementById("max" + Id).value == "")
                 return "Không bỏ trống";
-            //Xác thực số không âm
-            else if (curMax <= 0)
-                return "Giá trị max của bậc là số dương";
             //Xác thực trong khoảng giá trị [preMax+0.01;nextMax-0.01]
-            else if (curMax <= preMax + 0.01 || curMax >= nextMax - 0.01)
-                return "Giá trị nhập phải lớn hơn giá trị đầu và nhỏ hơn giá trị cuối bậc sau-0.01";
+            else if (curMax <= preMax)
+                return "Giá trị nhập phải lớn hơn giá trị đầu";
+            else if(curMax >= nextMax)
+                return "Giá trị nhập phải nhỏ hơn giá trị cuối bậc sau";
             else
                 return curMax;
+        }
+        function validatePrice(Id){
+            var price=document.getElementById("price" +Id).value;
+            var regEx=/^-{0,1}\d*\.{0,1}\d+$/;
+            if (!regEx.test(price)||price<=0) {
+                return "Giá trị nhập phải là số thực lớn hơn 0";
+            }
+            //Xác thực không bỏ trống
+            else if (document.getElementById("price" + Id).value == "")
+                return "Không bỏ trống";
+            else
+                return price;
         }
     </script>
 </head>
@@ -79,32 +137,36 @@
     <div th:each="level,stat: *{levelList}">
         <label>Bậc:</label>
         <input type="text" style="width:30px"
-               readonly="readonly"
-               th:value="${stat.count}">
+               readonly
+               th:field="${config.levelList[__${stat.index}__].id}">
         <label>Giá trị đầu</label>
         <input th:id="|min${stat.count}|"
                readonly="readonly"
-               th:value="(${stat.index}==0)? (0)
-			   : (0.01 + *{levelList[__|${stat.index}-1|__].maxValue})">
+               th:value="${config.getMinValue(__${stat.index}__)}">
         <label>Giá trị cuối</label>
         <input th:id="|max${stat.count}|"
-               th:value="${level.maxValue}"
-               disabled>
+               th:unless="${config.levelList[__${stat.index}__].maxValue}==null"
+               th:field="${config.levelList[__${stat.index}__].maxValue}"
+               readonly>
+        <input value="Vô cực" th:if="${config.levelList[__${stat.index}__].maxValue}==null" readonly>
         <label>Giá tiền</label>
         <input th:id="|price${stat.count}|"
-               th:value="${level.price}"
-               th:field="*{levelList[__${stat.index}__].price}">
-        <a th:href="|/api/v1/configurations/del_level_from_form?id=${stat.index}|">
-            <button class="disable">Xóa</button>
-        </a>
+
+               th:field="${config.levelList[__${stat.index}__].price}"
+        readonly>
+        <button class="disable"
+                th:unless="${config.levelList[__${stat.index}__].maxValue}==null"
+                th:formaction="|/api/v1/configurations/del_level_from_form/${stat.index}|">Xóa</button>
+        <button th:if="${config.levelList[__${stat.index}__].maxValue}==null"
+                disabled>Xóa</button>
         <button class="disable" type="button" th:id="|mod${stat.count}|"
-                th:onclick="|modify(${stat.count})|">Sửa
+                th:onclick="|modify(${stat.count})|" value=1>Sửa
         </button>
     </div>
     <button class="disable" type="submit"
-            formaction="/api/v1/configurations/save_config_todb" value="Lưu"></button>
+            formaction="/api/v1/configurations/save_config_todb">Lưu</button>
     <button class="disable" type="submit"
-            formaction="/api/v1/configurations/add_level_to_form" value="Thêm bậc"></button>
+            formaction="/api/v1/configurations/add_level_to_form" >Thêm bậc</button>
 </form>
 <p id="error" style="visibility: hidden">Lỗi!</p>
 </body>
