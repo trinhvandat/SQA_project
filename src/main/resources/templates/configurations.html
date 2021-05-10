@@ -132,7 +132,9 @@
     </script>
 </head>
 <body>
-<form method="post" action="" th:object="${config}">
+<div class="container">
+    <div class="jumbotron" style="padding-top: 100px">
+<form method="post" action="" th:object="${config}" style="text-align: center;border: darkblue;border-style: outset;padding-top: 50px;">
 
     <div th:each="level,stat: *{levelList}">
         <label>Bậc:</label>
@@ -162,12 +164,16 @@
         <button class="disable" type="button" th:id="|mod${stat.count}|"
                 th:onclick="|modify(${stat.count})|" value=1>Sửa
         </button>
+    </div><br>
+    <div style="padding-right: 50px;text-align: right;padding-bottom: 20px">
+        <button class="disable" type="submit"
+                formaction="/api/v1/configurations/save_config_todb">Lưu</button>
+        <button class="disable" type="submit"
+                formaction="/api/v1/configurations/add_level_to_form" >Thêm bậc</button>
     </div>
-    <button class="disable" type="submit"
-            formaction="/api/v1/configurations/save_config_todb">Lưu</button>
-    <button class="disable" type="submit"
-            formaction="/api/v1/configurations/add_level_to_form" >Thêm bậc</button>
 </form>
-<p id="error" style="visibility: hidden">Lỗi!</p>
+<p id="error" style="visibility: hidden;color: red">Lỗi!</p>
+</div>
+</div>
 </body>
 </html>

@@ -4076,3 +4076,248 @@ org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the c
 2021-05-10 02:44:44.848  WARN 1688 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
 2021-05-10 02:44:47.809  WARN 1688 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
 2021-05-10 02:44:47.809  WARN 1688 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:22:35.068  INFO 5004 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Starting SqaWaterMoneyManagementApplication using Java 11.0.9 on Admin with PID 5004 (F:\Project\SQA_project\target\classes started by Administrator in F:\Project\SQA_project)
+2021-05-10 15:22:35.104  INFO 5004 --- [main] c.p.s.SqaWaterMoneyManagementApplication : No active profile set, falling back to default profiles: default
+2021-05-10 15:22:37.412  INFO 5004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-10 15:22:37.719  INFO 5004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 286 ms. Found 4 JPA repository interfaces.
+2021-05-10 15:22:39.267  INFO 5004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-10 15:22:39.283  INFO 5004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-10 15:22:39.283  INFO 5004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-10 15:22:39.643  INFO 5004 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2021-05-10 15:22:39.643  INFO 5004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4351 ms
+2021-05-10 15:22:40.000  INFO 5004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-10 15:22:42.937  INFO 5004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-10 15:22:44.598  INFO 5004 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-10 15:22:46.821  INFO 5004 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-05-10 15:22:47.230  INFO 5004 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-10 15:22:47.448  INFO 5004 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-10 15:22:47.451  WARN 5004 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-05-10 15:22:47.640  INFO 5004 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-10 15:22:47.951  INFO 5004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-10 15:22:48.031  INFO 5004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-10 15:22:48.315  INFO 5004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-10 15:22:48.598  INFO 5004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-10 15:22:49.857  INFO 5004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-10 15:22:49.885  INFO 5004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-10 15:22:51.382  WARN 5004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-10 15:22:51.532  INFO 5004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-10 15:22:51.732  INFO 5004 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-10 15:22:52.240  INFO 5004 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-10 15:22:52.379  INFO 5004 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-10 15:22:52.380  INFO 5004 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-10 15:22:52.380  INFO 5004 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1620634972365
+2021-05-10 15:22:54.503  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:22:56.645  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:22:58.864  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:01.231  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:03.727  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:06.596  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:09.610  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:12.842  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:16.078  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:19.086  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:22.407  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:22.458 ERROR 5004 --- [main] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$4(KafkaAdmin.java:254) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:233) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.core.KafkaAdmin.addTopicsIfNeeded(KafkaAdmin.java:219) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:189) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:963) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-2.4.4.jar:2.4.4]
+	at com.ptit.sqa.SqaWaterMoneyManagementApplication.main(SqaWaterMoneyManagementApplication.java:10) ~[classes/:na]
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108) ~[kafka-clients-2.4.1.jar:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272) ~[kafka-clients-2.4.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$4(KafkaAdmin.java:236) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 16 common frames omitted
+
+2021-05-10 15:23:25.556  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:28.434  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:31.633  WARN 5004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:32.463  INFO 5004 --- [kafka-admin-client-thread | adminclient-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=adminclient-1] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2021-05-10 15:23:32.472  INFO 5004 --- [kafka-admin-client-thread | adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited.
+
+2021-05-10 15:23:32.659  INFO 5004 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-05-10 15:23:32.756  INFO 5004 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-10 15:23:32.757  INFO 5004 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-10 15:23:32.757  INFO 5004 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1620635012756
+2021-05-10 15:23:32.760  INFO 5004 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-05-10 15:23:32.760  INFO 5004 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-05-10 15:23:32.810  INFO 5004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2021-05-10 15:23:32.872  INFO 5004 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Started SqaWaterMoneyManagementApplication in 59.597 seconds (JVM running for 64.527)
+2021-05-10 15:23:35.211  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:35.211  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:37.437  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:37.438  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:39.575  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:39.575  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:41.841  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:41.841  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:44.227  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:44.229  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:46.873  INFO 5004 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-10 15:23:46.873  INFO 5004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-10 15:23:46.881  INFO 5004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-05-10 15:23:47.187  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:47.188  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:50.302  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:50.302  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:53.484  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:53.485  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:56.438  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:56.439  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:23:59.451  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:23:59.451  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:02.502  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:02.502  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:05.766  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:05.767  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:08.764  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:08.764  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:11.715  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:11.715  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:14.732  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:14.733  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:17.965  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:17.966  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:21.016  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:21.017  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:24.033  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:24.034  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:27.045  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:27.047  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2021-05-10 15:24:30.193  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2021-05-10 15:24:30.194  WARN 5004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
