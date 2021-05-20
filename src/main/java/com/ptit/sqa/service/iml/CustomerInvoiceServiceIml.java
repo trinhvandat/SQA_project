@@ -2,8 +2,6 @@ package com.ptit.sqa.service.iml;
 
 import com.ptit.sqa.conponent.MappingHelper;
 import com.ptit.sqa.dto.response.CustomerInvoiceDTO;
-import com.ptit.sqa.exception.WaterAppException;
-import com.ptit.sqa.exception.WaterError;
 import com.ptit.sqa.model.Customer;
 import com.ptit.sqa.model.CustomerInvoice;
 import com.ptit.sqa.repository.CustomerInvoiceRepository;
@@ -43,7 +41,7 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
                     int status = updateNewWaterIndex(customer, newWaterIndex);
                     return status;
                 })
-                .orElse(BAD_REQUEST);
+                .orElse(NOT_FOUND);
     }
 
     private int updateNewWaterIndex(Customer customer, Integer newWaterIndex){
