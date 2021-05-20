@@ -10423,3 +10423,666 @@ Caused by: java.lang.NullPointerException: null
 2021-05-20 22:10:18.966  INFO 33495 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-05-20 22:10:18.978  INFO 33495 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-05-20 22:10:18.984  INFO 33495 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-20 22:38:03.637  INFO 44044 --- [main] .SqaWaterMoneyManagementApplicationTests : Starting SqaWaterMoneyManagementApplicationTests using Java 14.0.2 on leonard with PID 44044 (started by leonard in /home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management)
+2021-05-20 22:38:03.643  INFO 44044 --- [main] .SqaWaterMoneyManagementApplicationTests : No active profile set, falling back to default profiles: default
+2021-05-20 22:38:04.424  INFO 44044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-20 22:38:04.543  INFO 44044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 4 JPA repository interfaces.
+2021-05-20 22:38:05.142  INFO 44044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-20 22:38:05.535  INFO 44044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-20 22:38:10.898  INFO 44044 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-20 22:38:11.354  INFO 44044 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-05-20 22:38:11.426  INFO 44044 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-20 22:38:11.436  INFO 44044 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-20 22:38:11.436  WARN 44044 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-05-20 22:38:11.804  INFO 44044 --- [main] liquibase.changelog                      : Table level created
+2021-05-20 22:38:11.804  INFO 44044 --- [main] liquibase.changelog                      : ChangeSet database/changelog/20210410-2105-add-table-level.xml::20210410-2105-001::Thành Đạt ran successfully in 363ms
+2021-05-20 22:38:11.823  INFO 44044 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-20 22:38:11.932  INFO 44044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-20 22:38:11.972  INFO 44044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-20 22:38:12.080  INFO 44044 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-20 22:38:12.168  INFO 44044 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-20 22:38:12.662  INFO 44044 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-20 22:38:12.669  INFO 44044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 22:38:13.570  WARN 44044 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-20 22:38:13.689  INFO 44044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-20 22:38:13.783  INFO 44044 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-20 22:38:14.182  INFO 44044 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-20 22:38:14.292  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:38:14.292  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:38:14.292  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525094291
+2021-05-20 22:38:14.570  INFO 44044 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-05-20 22:38:14.605  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:38:14.605  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:38:14.605  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525094605
+2021-05-20 22:38:14.606  INFO 44044 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-05-20 22:38:14.608  INFO 44044 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-05-20 22:38:14.623  INFO 44044 --- [main] .SqaWaterMoneyManagementApplicationTests : Started SqaWaterMoneyManagementApplicationTests in 11.296 seconds (JVM running for 13.127)
+2021-05-20 22:38:14.625  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: 8iz3OOkHRfuxFP4MRq87cg
+2021-05-20 22:38:14.627  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-05-20 22:38:14.629  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-20 22:38:14.639  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-20 22:38:14.648  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 74: {consumer-notification-group-1-06452c6f-dd08-4593-a61d-99b332386232=Assignment(partitions=[email-notification-0, email-notification-1])}
+2021-05-20 22:38:14.652  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation 74
+2021-05-20 22:38:14.656  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: email-notification-0, email-notification-1
+2021-05-20 22:38:14.666  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-20 22:38:14.667  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-1 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-20 22:38:14.668  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions assigned: [email-notification-0, email-notification-1]
+2021-05-20 22:38:15.152  INFO 44044 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-05-20 22:38:15.182  WARN 44044 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-05-20 22:38:15.182  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:38:15.182  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:38:15.182  INFO 44044 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525095182
+2021-05-20 22:38:15.193  INFO 44044 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 8iz3OOkHRfuxFP4MRq87cg
+2021-05-20 22:38:15.233  INFO 44044 --- [main] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-20 22:38:15.267  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-20 22:38:19.550  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
+2021-05-20 22:38:19.720  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions email-notification-0, email-notification-1
+2021-05-20 22:38:19.721  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions revoked: [email-notification-0, email-notification-1]
+2021-05-20 22:38:19.721  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Member consumer-notification-group-1-06452c6f-dd08-4593-a61d-99b332386232 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2021-05-20 22:38:19.722  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2021-05-20 22:38:19.723  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2021-05-20 22:38:19.727  INFO 44044 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : notification-group: Consumer stopped
+2021-05-20 22:38:19.743  INFO 44044 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-20 22:38:19.744  INFO 44044 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-05-20 22:38:19.747  INFO 44044 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 22:38:19.750  INFO 44044 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-20 22:38:19.757  INFO 44044 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-20 22:40:10.869  INFO 44195 --- [main] .SqaWaterMoneyManagementApplicationTests : Starting SqaWaterMoneyManagementApplicationTests using Java 14.0.2 on leonard with PID 44195 (started by leonard in /home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management)
+2021-05-20 22:40:10.873  INFO 44195 --- [main] .SqaWaterMoneyManagementApplicationTests : No active profile set, falling back to default profiles: default
+2021-05-20 22:40:11.800  INFO 44195 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-20 22:40:11.946  INFO 44195 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 4 JPA repository interfaces.
+2021-05-20 22:40:12.731  INFO 44195 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-20 22:40:13.063  INFO 44195 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-20 22:40:13.492  INFO 44195 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-20 22:40:13.958  INFO 44195 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-05-20 22:40:14.021  INFO 44195 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-20 22:40:14.032  INFO 44195 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-20 22:40:14.033  WARN 44195 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-05-20 22:40:14.046  INFO 44195 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-20 22:40:14.186  INFO 44195 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-20 22:40:14.233  INFO 44195 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-20 22:40:14.333  INFO 44195 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-20 22:40:14.436  INFO 44195 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-20 22:40:14.968  INFO 44195 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-20 22:40:14.975  INFO 44195 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 22:40:15.965  WARN 44195 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-20 22:40:16.103  INFO 44195 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-20 22:40:16.207  INFO 44195 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-20 22:40:16.605  INFO 44195 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-20 22:40:16.692  INFO 44195 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:40:16.692  INFO 44195 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:40:16.692  INFO 44195 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525216691
+2021-05-20 22:40:16.974  INFO 44195 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-05-20 22:40:17.009  INFO 44195 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:40:17.009  INFO 44195 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:40:17.010  INFO 44195 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525217009
+2021-05-20 22:40:17.011  INFO 44195 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-05-20 22:40:17.013  INFO 44195 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-05-20 22:40:17.030  INFO 44195 --- [main] .SqaWaterMoneyManagementApplicationTests : Started SqaWaterMoneyManagementApplicationTests in 6.44 seconds (JVM running for 7.643)
+2021-05-20 22:40:17.033  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: 8iz3OOkHRfuxFP4MRq87cg
+2021-05-20 22:40:17.035  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-05-20 22:40:17.044  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-20 22:40:17.053  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-20 22:40:17.060  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 76: {consumer-notification-group-1-fba20fe9-90d4-4d0d-ae3a-875e7ffddccf=Assignment(partitions=[email-notification-0, email-notification-1])}
+2021-05-20 22:40:17.064  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation 76
+2021-05-20 22:40:17.069  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: email-notification-0, email-notification-1
+2021-05-20 22:40:17.080  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-20 22:40:17.081  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-1 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-20 22:40:17.082  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions assigned: [email-notification-0, email-notification-1]
+2021-05-20 22:40:17.269  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions email-notification-0, email-notification-1
+2021-05-20 22:40:17.270  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions revoked: [email-notification-0, email-notification-1]
+2021-05-20 22:40:17.270  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Member consumer-notification-group-1-fba20fe9-90d4-4d0d-ae3a-875e7ffddccf sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2021-05-20 22:40:17.271  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2021-05-20 22:40:17.272  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2021-05-20 22:40:17.279  INFO 44195 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : notification-group: Consumer stopped
+2021-05-20 22:40:17.297  INFO 44195 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-20 22:40:17.300  INFO 44195 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 22:40:17.303  INFO 44195 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-20 22:40:17.313  INFO 44195 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-20 22:41:36.390  INFO 44317 --- [main] .SqaWaterMoneyManagementApplicationTests : Starting SqaWaterMoneyManagementApplicationTests using Java 14.0.2 on leonard with PID 44317 (started by leonard in /home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management)
+2021-05-20 22:41:36.395  INFO 44317 --- [main] .SqaWaterMoneyManagementApplicationTests : No active profile set, falling back to default profiles: default
+2021-05-20 22:41:37.275  INFO 44317 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-20 22:41:37.417  INFO 44317 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 4 JPA repository interfaces.
+2021-05-20 22:41:38.086  INFO 44317 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-20 22:41:38.496  INFO 44317 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-20 22:41:38.960  INFO 44317 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-20 22:41:39.525  INFO 44317 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-05-20 22:41:39.601  INFO 44317 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-20 22:41:39.609  INFO 44317 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-20 22:41:39.610  WARN 44317 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-05-20 22:41:39.623  INFO 44317 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-20 22:41:39.748  INFO 44317 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-20 22:41:39.789  INFO 44317 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-20 22:41:39.889  INFO 44317 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-20 22:41:39.995  INFO 44317 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-20 22:41:40.511  INFO 44317 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-20 22:41:40.519  INFO 44317 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 22:41:41.495  WARN 44317 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-20 22:41:41.624  INFO 44317 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-20 22:41:41.754  INFO 44317 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-20 22:41:42.165  INFO 44317 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-20 22:41:42.263  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:41:42.263  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:41:42.264  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525302261
+2021-05-20 22:41:42.591  INFO 44317 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-05-20 22:41:42.633  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:41:42.633  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:41:42.634  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525302633
+2021-05-20 22:41:42.635  INFO 44317 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-05-20 22:41:42.638  INFO 44317 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-05-20 22:41:42.655  INFO 44317 --- [main] .SqaWaterMoneyManagementApplicationTests : Started SqaWaterMoneyManagementApplicationTests in 6.584 seconds (JVM running for 8.003)
+2021-05-20 22:41:42.660  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: 8iz3OOkHRfuxFP4MRq87cg
+2021-05-20 22:41:42.662  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-05-20 22:41:42.665  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-20 22:41:42.676  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-20 22:41:42.683  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 78: {consumer-notification-group-1-8164c6e7-6286-452a-93f6-f6339afdf390=Assignment(partitions=[email-notification-0, email-notification-1])}
+2021-05-20 22:41:42.689  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation 78
+2021-05-20 22:41:42.694  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: email-notification-0, email-notification-1
+2021-05-20 22:41:42.706  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-20 22:41:42.707  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-1 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-20 22:41:42.709  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions assigned: [email-notification-0, email-notification-1]
+2021-05-20 22:41:43.131  INFO 44317 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-05-20 22:41:43.157  WARN 44317 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-05-20 22:41:43.158  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-20 22:41:43.158  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-20 22:41:43.158  INFO 44317 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621525303158
+2021-05-20 22:41:43.164  INFO 44317 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 8iz3OOkHRfuxFP4MRq87cg
+2021-05-20 22:41:43.192  INFO 44317 --- [main] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-20 22:41:43.232  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-20 22:41:47.260  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
+2021-05-20 22:41:47.379  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions email-notification-0, email-notification-1
+2021-05-20 22:41:47.379  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions revoked: [email-notification-0, email-notification-1]
+2021-05-20 22:41:47.380  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Member consumer-notification-group-1-8164c6e7-6286-452a-93f6-f6339afdf390 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2021-05-20 22:41:47.381  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2021-05-20 22:41:47.381  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2021-05-20 22:41:47.389  INFO 44317 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : notification-group: Consumer stopped
+2021-05-20 22:41:47.404  INFO 44317 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-20 22:41:47.405  INFO 44317 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-05-20 22:41:47.408  INFO 44317 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 22:41:47.410  INFO 44317 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-20 22:41:47.416  INFO 44317 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
