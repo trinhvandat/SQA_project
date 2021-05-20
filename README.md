@@ -14,7 +14,7 @@ In the project, we create a system have:
 # Coding convention:
 1. Follow Restful api design. 
 2. Each method must have LOC(line of code) less than 30. 
-3. Api's response time less than 3s.
+3. Api's response time less than 5s.
 4. Using snack name for table name, field name of database
 5. Using mysql database
 6. Fontend using Thymeleaf(Spring MVC)
