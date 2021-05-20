@@ -9,13 +9,13 @@ import com.ptit.sqa.model.CustomerInvoice;
 import com.ptit.sqa.repository.CustomerInvoiceRepository;
 import com.ptit.sqa.repository.CustomerRepository;
 import com.ptit.sqa.service.CustomerInvoiceService;
-import com.ptit.sqa.service.EmailService;
 import com.ptit.sqa.service.kafka.KafkaPublisher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -26,6 +26,10 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
     private final CustomerRepository customerRepository;
     private final KafkaPublisher kafkaPublisher;
 
+    private final int OK = 200;
+    private final int BAD_REQUEST = 400;
+    private final int NOT_FOUND = 404;
+
     @Override
     public List<CustomerInvoiceDTO> listInvoiceThisMonth() {
         List<CustomerInvoice> invoices = customerInvoiceRepository.findByNewWaterIndexUsedIsNull();
@@ -33,30 +37,32 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
     }
 
     @Override
-    public void addNewWaterIndex(int customerId, Integer newWaterIndex) {
-        customerRepository.findById(customerId)
+    public int addNewWaterIndex(int customerId, Integer newWaterIndex) {
+        return customerRepository.findById(customerId)
                 .map(customer -> {
-                    updateNewWaterIndex(customer, newWaterIndex);
-                    return customer;
+                    int status = updateNewWaterIndex(customer, newWaterIndex);
+                    return status;
                 })
-                .orElseThrow(() -> {
-                    throw new WaterAppException(WaterError.CUSTOMER_NOT_FOUND);
-                });
+                .orElse(BAD_REQUEST);
     }
 
-    private void updateNewWaterIndex(Customer customer, Integer newWaterIndex){
-        customerInvoiceRepository.findByNewWaterIndexUsedIsNullAndCustomerId(customer.getId())
-                .map(customerInvoice -> {
-                    customerInvoice.setNewWaterIndexUsed(newWaterIndex);
-                    return customerInvoiceRepository.save(customerInvoice);
-                })
-                .map(customerInvoice -> {
-                    CustomerInvoiceDTO customerInvoiceDTO = MappingHelper.map(customerInvoice, CustomerInvoiceDTO.class);
-                    kafkaPublisher.sendMessage(customerInvoiceDTO);
-                    return customerInvoice;
-                })
-                .orElseThrow(() -> {
-                    throw new WaterAppException(WaterError.CUSTOMER_INVOICE_NOT_FOUND);
-                });
+    private int updateNewWaterIndex(Customer customer, Integer newWaterIndex){
+
+        CustomerInvoice customerInvoice = customerInvoiceRepository.findByNewWaterIndexUsedIsNullAndCustomerId(customer.getId()).orElse(null);
+        if (Objects.isNull(customerInvoice)){
+            return NOT_FOUND;
+        }
+        else {
+            if (newWaterIndex < customerInvoice.getOldWaterIndexUsed()){
+                return BAD_REQUEST;
+            }
+            else {
+                customerInvoice.setNewWaterIndexUsed(newWaterIndex);
+                customerInvoice = customerInvoiceRepository.save(customerInvoice);
+                CustomerInvoiceDTO customerInvoiceDTO = MappingHelper.map(customerInvoice, CustomerInvoiceDTO.class);
+                kafkaPublisher.sendMessage(customerInvoiceDTO);
+                return OK;
+            }
+        }
     }
 }

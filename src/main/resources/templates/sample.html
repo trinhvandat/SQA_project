@@ -13,27 +13,29 @@
         }
     </style>
 </head>
-<body>
-<p th:text="${'Thân Gửi ' + name + ','}"></p>
-<p>
-    <b>Công ty nước sạch Thủy Long </b>thông báo bạn có một hóa đơn tiền nước sắp đến hạn thanh toán vào ngày 21 tháng này.
-</p>
+    <body>
+        <p th:text="${'Kính gửi khách hàng ' + name + ','}"></p>
+        <p>
+            <b>Công ty nước sạch Thủy Long </b>thông báo bạn có một hóa đơn tiền nước sắp đến hạn thanh toán vào ngày 21 tháng này. <br/>
+        </p>
 
-<p>Thông tin hóa đơn như sau:</p>
+        <p>Thông tin hóa đơn như sau:</p>
+        <p th:text="${'Họ tên khách hàng: ' + name}"></p>
+        <p th:text="${'Địa chỉ: ' + address}"></p>
+        <p th:text="${'Chỉ số cũ: ' + oldIndex}"></p>
+        <p th:text="${'Chỉ số mới: ' + newIndex}"/>
+        <p th:text="${'Lượng nước tiêu thụ: ' + amount}"/>
+        <p th:text="${'Đơn giá: ' + unitPrice}"/>
+        <p th:text="${'Thành tiên: ' + total}"/>
+        <p th:text="${'Thuế giá trị gia tăng VAT 5%: ' + tax}"/>
+        <p th:text="${'Tổng số tiền phải chi trả(đã bao gồm thuế VAT): ' + totalWithTax}"/>
 
-<p th:text="${'Họ tên khách hàng: ' + name}"></p>
-<p th:text="${'Địa chỉ: ' + address}"></p>
-<p th:text="${'Chỉ số cũ: ' + oldIndex}"></p>
+        <p>Làm ơn thanh toán đúng hạn để việc sử dụng nước của quý khách không bị gián đoạn.</p>
 
-<p th:text="${'Chỉ số mới: ' + newIndex}"/>
-<p th:text="${'Thành tiền(đã bao gồm thuế VAT): ' + total}"/>
-
-<p>Làm ơn thanh toán đúng hạn để việc sử dụng nước của quý khách không bị gián đoạn.</p>
-
-<p>
-    Trân Trọng, <br />
-    <em th:text="${sign}"></em>
-<p th:text="${location}"></p>
-</p>
-</body>
+        <p>
+            Trân Trọng, <br />
+            <em th:text="${sign}"></em>
+            <p th:text="${location}"></p>
+        </p>
+    </body>
 </html>
