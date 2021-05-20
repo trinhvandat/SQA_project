@@ -1,0 +1,78 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+.body-sqa{
+    display: block;
+    width: 100%;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.selection {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.selection select{
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.bang{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dstable{
+    border-radius: 5px;
+    border-collapse: collapse;
+    width: 100%;
+
+    border-top: 5px solid black ;
+    background-color: white;
+
+
+}
+.dstable tr{
+    margin-bottom: 20px;
+    height: 40px;
+    padding:20px 0px;
+}
+
+.dstable th{
+    font-size: 16px;
+    padding: 5px 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.dstable td{
+    font-size: 14px;
+    text-align: center;
+
+}
+.btncss{
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.btncss button{
+    padding: 7px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}

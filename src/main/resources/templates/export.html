@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="body-sqa">
+    <h1>Danh sách hộ dân sử dụng nước</h1>
+    <div class="selection">
+        <select>
+            <option value="">Năm</option>
+        </select>
+        <select>
+            <option value="">Tháng</option>
+        </select>
+    </div>
+    <div class="bang">
+        <table class="dstable" id="tblData">
+            <tr>
+                <th>Tên khách hàng</th>
+                <th>Mã khách hàng</th>
+                <th>Địa chỉ</th>
+                <th>Thời gian bắt đầu</th>
+                <th>Chỉ số cũ</th>
+                <th>Chỉ số mới</th>
+                <th>Giá tiền</th>
+                <th>Số tiền</th>
+                <th>Tổng tiền tháng này</th>
+                <th>Tình trạng đóng tiền</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Quỳnh Anh</td>
+                <td>ABCDE</td>
+                <td>Dương Lâm, Hà Đông</td>
+                <td>20/10/2021</td>
+                <td>1520</td>
+                <td>1530</td>
+                <td>2500</td>
+                <td>250000</td>
+                <td>250000</td>
+                <td>Đã đóng</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Quỳnh Anh</td>
+                <td>ABCDE</td>
+                <td>Dương Lâm, Hà Đông</td>
+                <td>20/10/2021</td>
+                <td>1520</td>
+                <td>1530</td>
+                <td>2500</td>
+                <td>250000</td>
+                <td>250000</td>
+                <td>Đã đóng</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Quỳnh Anh</td>
+                <td>ABCDE</td>
+                <td>Dương Lâm, Hà Đông</td>
+                <td>20/10/2021</td>
+                <td>1520</td>
+                <td>1530</td>
+                <td>2500</td>
+                <td>250000</td>
+                <td>250000</td>
+                <td>Đã đóng</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Quỳnh Anh</td>
+                <td>ABCDE</td>
+                <td>Dương Lâm, Hà Đông</td>
+                <td>20/10/2021</td>
+                <td>1520</td>
+                <td>1530</td>
+                <td>2500</td>
+                <td>250000</td>
+                <td>250000</td>
+                <td>Đã đóng</td>
+            </tr>
+        </table>
+    </div>
+    <div class="btncss"><button id="btn-xuat"  onclick="exportTableToExcel('tblData', 'Báo cáo thống kê tiền điện nước')">Xuất file</button></div>
+</div>
+</body>
+<script>
+    function exportTableToExcel(tableID, filename = ''){
+        var downloadLink;
+        var dataType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementById(tableID);
+        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+        // Specify file name
+        filename = filename?filename+'.xls':'excel_data.xls';
+
+        // Create download link element
+        downloadLink = document.createElement("a");
+
+        document.body.appendChild(downloadLink);
+
+        if(navigator.msSaveOrOpenBlob){
+            var blob = new Blob(['\ufeff', tableHTML], {
+                type: dataType
+            });
+            navigator.msSaveOrOpenBlob( blob, filename);
+        }else{
+            // Create a link to the file
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+            // Setting the file name
+            downloadLink.download = filename;
+
+            //triggering the function
+            downloadLink.click();
+        }
+    }
+</script>
+</html>
