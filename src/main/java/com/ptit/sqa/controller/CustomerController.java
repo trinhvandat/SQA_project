@@ -16,7 +16,7 @@ public class CustomerController {
     @PostMapping("/{customerId}/invoices")
     public ResponseEntity<?> addNewWaterIndex(@PathVariable("customerId") int customerId,
                                               @RequestParam("newWaterIndex") Integer newWaterIndex){
-        customerInvoiceService.addNewWaterIndex(customerId, newWaterIndex);
-        return new ResponseEntity<>(HttpStatus.OK);
+        int addedResult =  customerInvoiceService.addNewWaterIndex(customerId, newWaterIndex);
+        return new ResponseEntity<>(HttpStatus.valueOf(addedResult));
     }
 }
