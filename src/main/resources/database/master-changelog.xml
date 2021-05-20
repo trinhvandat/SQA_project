@@ -9,4 +9,5 @@
 
     <include file="changelog/20210324-2242-add-table-customer.xml" relativeToChangelogFile="true"/>
     <include file="changelog/20210324-2252-add-customer-invoices.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/20210410-2105-add-table-level.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
