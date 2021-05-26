@@ -15,9 +15,8 @@
 </head>
     <body>
         <p th:text="${'Kính gửi khách hàng ' + name + ','}"></p>
-        <p>
-            <b>Công ty nước sạch Thủy Long </b>thông báo bạn có một hóa đơn tiền nước sắp đến hạn thanh toán vào ngày 21 tháng này. <br/>
-        </p>
+        <p><b style="font-size: larger">Công ty nước sạch Thủy Long </b>xin trân trọng thông báo:</p>
+        <p th:text="${'Bạn có một hóa đơn tiền nước cần thanh toán vào ngày 21 tháng ' + month}"></p>
 
         <p>Thông tin hóa đơn như sau:</p>
         <p th:text="${'Họ tên khách hàng: ' + name}"></p>
@@ -30,7 +29,7 @@
         <p th:text="${'Thuế giá trị gia tăng VAT 5%: ' + tax}"/>
         <p th:text="${'Tổng số tiền phải chi trả(đã bao gồm thuế VAT): ' + totalWithTax}"/>
 
-        <p>Làm ơn thanh toán đúng hạn để việc sử dụng nước của quý khách không bị gián đoạn.</p>
+        <p style="color: red">Làm ơn thanh toán đúng hạn để việc sử dụng nước của quý khách không bị gián đoạn.</p>
 
         <p>
             Trân Trọng, <br />

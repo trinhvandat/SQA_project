@@ -6,6 +6,8 @@ import com.ptit.sqa.model.Mail;
 import com.ptit.sqa.service.EmailService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.MailException;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -13,9 +15,12 @@ import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 
 import javax.mail.MessagingException;
+import javax.mail.SendFailedException;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.nio.charset.StandardCharsets;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,18 +43,21 @@ public class EmailServiceIml implements EmailService {
         MimeMessage message = emailSender.createMimeMessage();
         MimeMessageHelper helper = null;
         try {
+            InternetAddress internetAddress = new InternetAddress(mail.getTo());
+            internetAddress.validate();
             helper = new MimeMessageHelper(message,
                     MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,
                     StandardCharsets.UTF_8.name());
             String html = getHtmlContent(mail);
-
-            helper.setTo(mail.getTo());
+            helper.addTo(mail.getTo());
             helper.setFrom(EMAIL_FROM);
             helper.setSubject(mail.getSubject());
             helper.setText(html, true);
-
             emailSender.send(message);
             return true;
+        } catch (AddressException e){
+            sendMailToAdmin(mail.getTo(), invoice.getCustomer().getName());
+            throw new RuntimeException("email address invalid");
         } catch (MessagingException e) {
             throw new RuntimeException("Send email fail", e);
         }
@@ -78,6 +86,7 @@ public class EmailServiceIml implements EmailService {
         mailProperties.put("amount", invoice.getNewWaterIndexUsed() - invoice.getOldWaterIndexUsed());
         mailProperties.put("unitPrice", unitPrice);
         mailProperties.put("totalWithTax", getTotalWithTax(invoice.getOldWaterIndexUsed(), invoice.getNewWaterIndexUsed()));
+        mailProperties.put("month", getCurrentMonth());
         return mailProperties;
     }
 
@@ -105,6 +114,24 @@ public class EmailServiceIml implements EmailService {
     private float getTotalWithTax(int oldIndex, int newIndex){
         float totalWithoutVAT = (float) ((newIndex - oldIndex) * unitPrice);
         return (float) (totalWithoutVAT * 1.05);
+    }
+
+    private String getCurrentMonth(){
+        LocalDate dateNow = LocalDate.now();
+        return String.format("%s %s %s", dateNow.getMonth().getValue(), "năm", dateNow.getYear());
+    }
+
+    private void sendMailToAdmin(String invalidEmail, String customer){
+        final String adminEmail = "trinhvandat90399@gmail.com";
+        final String errorSendMailSubject = "Send bill to customer fail";
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setFrom(EMAIL_FROM);
+        mailMessage.setTo(adminEmail);
+        mailMessage.setSubject(errorSendMailSubject);
+        mailMessage.setText(String.format("%s: %s %s: %s. %s", "Send bill to customer", customer,
+                "fail, because their email is invalid", invalidEmail,
+                "The result of the new stat update has been automatically updated to the original value."));
+        emailSender.send(mailMessage);
     }
 
 }
