@@ -2,6 +2,9 @@ package com.ptit.sqa.exception;
 
 import java.util.LinkedHashMap;
 
+/*
+throw exception with error from server.
+ */
 public class WaterSysException extends WaterServiceException{
 
     private final String printMessage;

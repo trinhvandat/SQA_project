@@ -22,10 +22,13 @@ public class KafkaSubscriberIml implements KafkaSubscriber{
     private CountDownLatch latch = new CountDownLatch(1);
     private String payload = null;
 
+    /*
+    implement
+     */
     @Override
     public boolean HandlerEventSendEmailNotification(@Payload CustomerInvoiceDTO invoice, Acknowledgment ack) {
         log.info("receive");
-        ack.acknowledge();
+        ack.acknowledge(); // notice the kafka server if ack record
         try {
             boolean notificationResult = emailService.noticePaymentBill(invoice);
             log.info("Result send water bill notification to customer: {} is: {}", invoice.getCustomer().getName(), notificationResult);
@@ -33,6 +36,9 @@ public class KafkaSubscriberIml implements KafkaSubscriber{
             latch.countDown();
             return notificationResult;
         } catch (Exception e){
+            /*
+            Call back data in database. reUpdate record invoices in database
+             */
             customerInvoiceRepository.findById(invoice.getId())
                     .ifPresent(customerInvoice -> {
                         customerInvoice.setNewWaterIndexUsed(null);
