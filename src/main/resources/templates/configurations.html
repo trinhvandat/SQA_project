@@ -16,16 +16,16 @@
         function modify(Id) {
             var trigger = Number(document.getElementById("mod" + Id).value);
             //xử lý bậc cuối
-            if(document.getElementById("max"+Id)==null){
+            if (document.getElementById("max" + Id) == null) {
                 //Xử lý cho phép nhập giá trị sửa
-                if (trigger == 1 ) {
+                if (trigger == 1) {
                     var dis = document.getElementsByClassName("disable");
                     for (var i = 0; i < dis.length; i++) {
                         dis[i].disabled = true;
                     }
                     document.getElementById("mod" + Id).disabled = false;
                     document.getElementById("mod" + Id).value = 2;
-                    document.getElementById("mod" + Id).innerHTML="Xác nhận";
+                    document.getElementById("mod" + Id).innerHTML = "Xác nhận";
                     document.getElementById("price" + Id).readOnly = false;
                 }
                 //Xử lý xác minh giá trị nhập
@@ -52,25 +52,28 @@
                 }
             }
             //Xử lý bậc bình thường
-            else{
+            else {
                 //Xử lý cho phép nhập giá trị sửa
-                if (trigger == 1 ) {
+                if (trigger == 1) {
                     var dis = document.getElementsByClassName("disable");
                     for (var i = 0; i < dis.length; i++) {
                         dis[i].disabled = true;
                     }
                     document.getElementById("mod" + Id).disabled = false;
                     document.getElementById("mod" + Id).value = 2;
-                    document.getElementById("mod" + Id).innerHTML="Xác nhận";
+                    document.getElementById("mod" + Id).innerHTML = "Xác nhận";
                     document.getElementById("max" + Id).readOnly = false;
                     document.getElementById("price" + Id).readOnly = false;
                 }
                 //Xử lý xác minh giá trị nhập
-                else {alert("1");
-                    var validateMaxValueResult = validateMaxValue(Id);alert(validateMaxValueResult);
-                    var validatePriceResult = validatePrice(Id);alert(validatePriceResult);
+                else {
+                    alert("1");
+                    var validateMaxValueResult = validateMaxValue(Id);
+                    alert(validateMaxValueResult);
+                    var validatePriceResult = validatePrice(Id);
+                    alert(validatePriceResult);
                     //Xử lý khi giá trị hợp lệ
-                    if (!Number.isNaN(Number(validateMaxValueResult))&&!Number.isNaN(Number(validatePriceResult))) {
+                    if (!Number.isNaN(Number(validateMaxValueResult)) && !Number.isNaN(Number(validatePriceResult))) {
                         document.getElementById("mod" + Id).innerHTML = "Sửa";
                         document.getElementById("max" + Id).readOnly = true;
                         document.getElementById("price" + Id).readOnly = true;
@@ -86,10 +89,10 @@
                     }
                     //Đưa thông báo lỗi khi giá trị không hợp lệ
                     else {
-                        if(!Number.isNaN(Number(validateMaxValueResult)))
-                            document.getElementById("error").innerHTML=validatePriceResult;
+                        if (!Number.isNaN(Number(validateMaxValueResult)))
+                            document.getElementById("error").innerHTML = validatePriceResult;
                         else
-                            document.getElementById("error").innerHTML=validateMaxValueResult;
+                            document.getElementById("error").innerHTML = validateMaxValueResult;
                         document.getElementById("error").style.visibility = "visible";
                     }
 
@@ -99,11 +102,11 @@
 
         function validateMaxValue(Id) {
             var preMax = (Id == 1) ? 0 : Number(document.getElementById("max" + (Id - 1)).value);
-            var curMax = (document.getElementById("max" + Id)==null) ? preMax*2 : Number(document.getElementById("max" + Id).value);
-            var nextMax = (document.getElementById("max" + (Id+1))==null) ? curMax*2 : Number(document.getElementById("max" + (Id + 1)).value);
+            var curMax = (document.getElementById("max" + Id) == null) ? preMax * 2 : Number(document.getElementById("max" + Id).value);
+            var nextMax = (document.getElementById("max" + (Id + 1)) == null) ? curMax * 2 : Number(document.getElementById("max" + (Id + 1)).value);
             //Xác thực là số và lớn hơn 0
-            var regEx=/^[0-9]+$/;
-            if (!regEx.test(curMax)||curMax<=0) {
+            var regEx = /^[0-9]+$/;
+            if (!regEx.test(curMax) || curMax <= 0) {
                 return "Giá trị nhập phải là số nguyên dương";
             }
             //Xác thực không bỏ trống
@@ -112,15 +115,16 @@
             //Xác thực trong khoảng giá trị [preMax+0.01;nextMax-0.01]
             else if (curMax <= preMax)
                 return "Giá trị nhập phải lớn hơn giá trị đầu";
-            else if(curMax >= nextMax)
+            else if (curMax >= nextMax)
                 return "Giá trị nhập phải nhỏ hơn giá trị cuối bậc sau";
             else
                 return curMax;
         }
-        function validatePrice(Id){
-            var price=document.getElementById("price" +Id).value;
-            var regEx=/^-{0,1}\d*\.{0,1}\d+$/;
-            if (!regEx.test(price)||price<=0) {
+
+        function validatePrice(Id) {
+            var price = document.getElementById("price" + Id).value;
+            var regEx = /^-{0,1}\d*\.{0,1}\d+$/;
+            if (!regEx.test(price) || price <= 0) {
                 return "Giá trị nhập phải là số thực lớn hơn 0";
             }
             //Xác thực không bỏ trống
@@ -133,47 +137,60 @@
 </head>
 <body>
 <div class="container">
-    <div class="jumbotron" style="padding-top: 100px">
-<form method="post" action="" th:object="${config}" style="text-align: center;border: darkblue;border-style: outset;padding-top: 50px;">
+    <div class="jumbotron" style="padding-top: 40px">
 
-    <div th:each="level,stat: *{levelList}">
-        <label>Bậc:</label>
-        <input type="text" style="width:30px"
-               readonly
-               th:field="${config.levelList[__${stat.index}__].id}">
-        <label>Giá trị đầu</label>
-        <input th:id="|min${stat.count}|"
-               readonly="readonly"
-               th:value="${config.getMinValue(__${stat.index}__)}">
-        <label>Giá trị cuối</label>
-        <input th:id="|max${stat.count}|"
-               th:unless="${config.levelList[__${stat.index}__].maxValue}==null"
-               th:field="${config.levelList[__${stat.index}__].maxValue}"
-               readonly>
-        <input value="Vô cực" th:if="${config.levelList[__${stat.index}__].maxValue}==null" readonly>
-        <label>Giá tiền</label>
-        <input th:id="|price${stat.count}|"
+        <h1 STYLE="text-align: center">CÔNG TY NƯỚC ABC</h1>
 
-               th:field="${config.levelList[__${stat.index}__].price}"
-        readonly>
-        <button class="disable"
-                th:unless="${config.levelList[__${stat.index}__].maxValue}==null"
-                th:formaction="|/api/v1/configurations/del_level_from_form/${stat.index}|">Xóa</button>
-        <button th:if="${config.levelList[__${stat.index}__].maxValue}==null"
-                disabled>Xóa</button>
-        <button class="disable" type="button" th:id="|mod${stat.count}|"
-                th:onclick="|modify(${stat.count})|" value=1>Sửa
-        </button>
-    </div><br>
-    <div style="padding-right: 50px;text-align: right;padding-bottom: 20px">
-        <button class="disable" type="submit"
-                formaction="/api/v1/configurations/save_config_todb">Lưu</button>
-        <button class="disable" type="submit"
-                formaction="/api/v1/configurations/add_level_to_form" >Thêm bậc</button>
     </div>
-</form>
-<p id="error" style="visibility: hidden;color: red">Lỗi!</p>
 </div>
+<div class="container">
+    <div class="jumbotron" style="padding-top: 100px">
+        <form method="post" action="" th:object="${config}"
+              style="text-align: center;border: darkblue;border-style: outset;padding-top: 50px;">
+
+            <div th:each="level,stat: *{levelList}">
+                <label>Bậc:</label>
+                <input type="text" style="width:30px"
+                       readonly
+                       th:field="${config.levelList[__${stat.index}__].id}">
+                <label>Giá trị đầu</label>
+                <input th:id="|min${stat.count}|"
+                       readonly="readonly"
+                       th:value="${config.getMinValue(__${stat.index}__)}">
+                <label>Giá trị cuối</label>
+                <input th:id="|max${stat.count}|"
+                       th:unless="${config.levelList[__${stat.index}__].maxValue}==null"
+                       th:field="${config.levelList[__${stat.index}__].maxValue}"
+                       readonly>
+                <input value="Vô cực" th:if="${config.levelList[__${stat.index}__].maxValue}==null" readonly>
+                <label>Giá tiền</label>
+                <input th:id="|price${stat.count}|"
+
+                       th:field="${config.levelList[__${stat.index}__].price}"
+                       readonly>
+                <button class="disable"
+                        th:unless="${config.levelList[__${stat.index}__].maxValue}==null"
+                        th:formaction="|/api/v1/configurations/del_level_from_form/${stat.index}|">Xóa
+                </button>
+                <button th:if="${config.levelList[__${stat.index}__].maxValue}==null"
+                        disabled>Xóa
+                </button>
+                <button class="disable" type="button" th:id="|mod${stat.count}|"
+                        th:onclick="|modify(${stat.count})|" value=1>Sửa
+                </button>
+            </div>
+            <br>
+            <div style="padding-right: 50px;text-align: right;padding-bottom: 20px">
+                <button class="disable" type="submit"
+                        formaction="/api/v1/configurations/save_config_todb">Lưu
+                </button>
+                <button class="disable" type="submit"
+                        formaction="/api/v1/configurations/add_level_to_form">Thêm bậc
+                </button>
+            </div>
+        </form>
+        <p id="error" style="visibility: hidden;color: red">Lỗi!</p>
+    </div>
 </div>
 </body>
 </html>

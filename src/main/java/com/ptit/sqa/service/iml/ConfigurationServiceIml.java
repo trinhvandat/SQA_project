@@ -43,8 +43,15 @@ public class ConfigurationServiceIml implements ConfigurationService {
     public void addLevelToForm() {
         List<Level> levelList = config.getLevelList();
         Level level = new Level();
+        //Xử lý khi tạo lần đầu
+        if(levelList.size()==0){
+            level.setId(1);
+            level.setMaxValue(null);
+            level.setPrice(0);
+            levelList.add(level);
+        }
         //Xử lý nếu số bậc lớn hơn 1
-        if(levelList.size()>1){
+        else if(levelList.size()>1){
             //config giá trị mới
             level.setId(levelList.size());
             int maxValue=levelList.get(levelList.size() - 2).getMaxValue();maxValue++;
