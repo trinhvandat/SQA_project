@@ -9,6 +9,12 @@ import java.util.concurrent.CountDownLatch;
 
 public interface KafkaSubscriber {
 
+    /*
+    auto listener from kafka topic
+    topic: your config
+    container factory: your config
+    Handler message and send email to customer
+     */
     @KafkaListener(
             topics = "${kafka.topic.event.mail}",
             containerFactory = "${kafka.consumer.container.factory}"

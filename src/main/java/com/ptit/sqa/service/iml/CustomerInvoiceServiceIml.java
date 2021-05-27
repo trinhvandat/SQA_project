@@ -24,6 +24,9 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
     private final CustomerRepository customerRepository;
     private final KafkaPublisher kafkaPublisher;
 
+    /*
+    This is a http status code in result of api add new water index
+     */
     private final int OK = 200;
     private final int BAD_REQUEST = 400;
     private final int NOT_FOUND = 404;
@@ -34,6 +37,9 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
         return MappingHelper.mapList(invoices, CustomerInvoiceDTO.class);
     }
 
+    /*
+    add new water index: add new index use water for customer.
+     */
     @Override
     public int addNewWaterIndex(int customerId, Integer newWaterIndex) {
         return customerRepository.findById(customerId)
@@ -44,8 +50,10 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
                 .orElse(NOT_FOUND);
     }
 
+    /*
+    Update new index in database
+     */
     private int updateNewWaterIndex(Customer customer, Integer newWaterIndex){
-
         CustomerInvoice customerInvoice = customerInvoiceRepository.findByNewWaterIndexUsedIsNullAndCustomerId(customer.getId()).orElse(null);
         if (Objects.isNull(customerInvoice)){
             return NOT_FOUND;
@@ -58,7 +66,7 @@ public class CustomerInvoiceServiceIml implements CustomerInvoiceService {
                 customerInvoice.setNewWaterIndexUsed(newWaterIndex);
                 customerInvoice = customerInvoiceRepository.save(customerInvoice);
                 CustomerInvoiceDTO customerInvoiceDTO = MappingHelper.map(customerInvoice, CustomerInvoiceDTO.class);
-                kafkaPublisher.sendMessage(customerInvoiceDTO);
+                kafkaPublisher.sendMessage(customerInvoiceDTO); // publish message to kafka server
                 return OK;
             }
         }

@@ -3057,3 +3057,1243 @@ Caused by: java.lang.RuntimeException: Send Email to customer fail
 2021-05-27 00:39:36.312  INFO 30218 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-05-27 00:39:36.314  INFO 30218 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-05-27 00:39:36.321  INFO 30218 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-27 00:39:56.871  INFO 30646 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Starting SqaWaterMoneyManagementApplication using Java 14.0.2 on leonard with PID 30646 (/home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management/target/classes started by leonard in /home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management)
+2021-05-27 00:39:56.874  INFO 30646 --- [main] c.p.s.SqaWaterMoneyManagementApplication : No active profile set, falling back to default profiles: default
+2021-05-27 00:39:57.500  INFO 30646 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-27 00:39:57.554  INFO 30646 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2021-05-27 00:39:57.987  INFO 30646 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 00:39:57.993  INFO 30646 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 00:39:57.993  INFO 30646 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-27 00:39:58.065  INFO 30646 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2021-05-27 00:39:58.065  INFO 30646 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1133 ms
+2021-05-27 00:39:58.158  INFO 30646 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 00:39:58.367  INFO 30646 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 00:40:03.620  INFO 30646 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-27 00:40:03.915  INFO 30646 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-05-27 00:40:03.965  INFO 30646 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-27 00:40:03.976  INFO 30646 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-27 00:40:03.977  WARN 30646 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-05-27 00:40:03.991  INFO 30646 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-27 00:40:04.061  INFO 30646 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-27 00:40:04.086  INFO 30646 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-27 00:40:04.150  INFO 30646 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-27 00:40:04.202  INFO 30646 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-27 00:40:04.504  INFO 30646 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-27 00:40:04.509  INFO 30646 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-27 00:40:04.913  WARN 30646 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-27 00:40:04.957  INFO 30646 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 00:40:05.027  INFO 30646 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-27 00:40:05.167  INFO 30646 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-27 00:40:05.195  INFO 30646 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-27 00:40:05.195  INFO 30646 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-27 00:40:05.195  INFO 30646 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1622050805194
+2021-05-27 00:40:05.395  INFO 30646 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-05-27 00:40:05.414  INFO 30646 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-27 00:40:05.414  INFO 30646 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-27 00:40:05.414  INFO 30646 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1622050805414
+2021-05-27 00:40:05.415  INFO 30646 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-05-27 00:40:05.417  INFO 30646 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-05-27 00:40:05.427  INFO 30646 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2021-05-27 00:40:05.431  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: 7_CtwoiOTJa3BjYz2WzI6w
+2021-05-27 00:40:05.432  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-05-27 00:40:05.434  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-27 00:40:05.437  INFO 30646 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Started SqaWaterMoneyManagementApplication in 8.901 seconds (JVM running for 9.467)
+2021-05-27 00:40:05.440  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-27 00:40:05.445  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 39: {consumer-notification-group-1-6fde134d-4952-40f9-8ca9-819c26209f5f=Assignment(partitions=[email-notification-0, email-notification-1])}
+2021-05-27 00:40:05.449  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation 39
+2021-05-27 00:40:05.451  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: email-notification-0, email-notification-1
+2021-05-27 00:40:05.459  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-27 00:40:05.459  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Setting offset for partition email-notification-1 to the committed offset FetchPosition{offset=22, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 1 rack: null), epoch=0}}
+2021-05-27 00:40:05.460  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions assigned: [email-notification-0, email-notification-1]
+2021-05-27 00:43:12.542  INFO 30646 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 00:43:12.542  INFO 30646 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 00:43:12.543  INFO 30646 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-27 00:43:12.733  INFO 30646 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-05-27 00:43:12.747  WARN 30646 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-05-27 00:43:12.748  INFO 30646 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-27 00:43:12.748  INFO 30646 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-27 00:43:12.748  INFO 30646 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1622050992747
+2021-05-27 00:43:12.751  INFO 30646 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 7_CtwoiOTJa3BjYz2WzI6w
+2021-05-27 00:43:12.906  INFO 30646 --- [http-nio-8080-exec-2] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-27 00:43:12.929  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:43:17.736  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
+2021-05-27 00:43:41.174  INFO 30646 --- [http-nio-8080-exec-3] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-27 00:43:41.177  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:43:45.108  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
+2021-05-27 00:44:58.111  INFO 30646 --- [http-nio-8080-exec-6] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-27 00:44:58.115  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:45:01.814  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
+2021-05-27 00:46:09.992  INFO 30646 --- [http-nio-8080-exec-9] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-27 00:46:09.995  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:46:14.041  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : Result send water bill notification to customer: Leonard is: true
+2021-05-27 00:46:42.717  INFO 30646 --- [http-nio-8080-exec-10] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-27 00:46:42.721  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:46:46.933  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:46:46.937 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:46:46.939  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:46:50.765  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:46:50.765 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:46:50.767  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:46:54.921  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:46:54.922 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:46:54.926  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:46:58.800  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:46:58.801 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:46:58.803  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:47:02.603  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:47:02.603 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:47:02.605  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:47:06.471  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:47:06.472 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:47:06.478  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:47:10.369  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:47:10.370 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:47:10.375  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:47:14.416  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:47:14.417 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:47:14.422  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:47:21.136  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 26 for partition email-notification-1
+2021-05-27 00:47:21.137 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:47:21.143  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 00:47:24.953 ERROR 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.SeekToCurrentErrorHandler        : Backoff FixedBackOff{interval=0, currentAttempts=10, maxAttempts=9} exhausted for ConsumerRecord(topic = email-notification, partition = 1, leaderEpoch = 0, offset = 26, CreateTime = 1622051202717, serialized key size = 4, serialized value size = 252, headers = RecordHeaders(headers = [], isReadOnly = false), key = test, value = CustomerInvoiceDTO(id=2, newWaterIndexUsed=200, oldWaterIndexUsed=0, timeUsing=null, customer=CustomerDTO(id=1, name=Leonard, email=tha.asc, phoneNumber=0373329203, address=AddressDTO(id=1, numberHouse=cl3, street=Vu An, district=Kien Xuong, city=Thai Binh))))
+
+org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 00:48:10.209  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Revoke previously assigned partitions email-notification-0, email-notification-1
+2021-05-27 00:48:10.209  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions revoked: [email-notification-0, email-notification-1]
+2021-05-27 00:48:10.212  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Member consumer-notification-group-1-6fde134d-4952-40f9-8ca9-819c26209f5f sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2021-05-27 00:48:10.213  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Unsubscribed all topics or patterns and assigned partitions
+2021-05-27 00:48:10.213  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2021-05-27 00:48:10.217  INFO 30646 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : notification-group: Consumer stopped
+2021-05-27 00:48:10.230  INFO 30646 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-27 00:48:10.230  INFO 30646 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-05-27 00:48:10.232  INFO 30646 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-27 00:48:10.234  INFO 30646 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-27 00:48:10.238  INFO 30646 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-27 21:09:06.607  INFO 9680 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Starting SqaWaterMoneyManagementApplication using Java 14.0.2 on leonard with PID 9680 (/home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management/target/classes started by leonard in /home/leonard/Documents/workspace/my_university/ptit-schoolyear-4/sqa-subject/sqa-water-money-management)
+2021-05-27 21:09:06.613  INFO 9680 --- [main] c.p.s.SqaWaterMoneyManagementApplication : No active profile set, falling back to default profiles: default
+2021-05-27 21:09:07.438  INFO 9680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-27 21:09:07.520  INFO 9680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2021-05-27 21:09:08.002  INFO 9680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-27 21:09:08.009  INFO 9680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-27 21:09:08.010  INFO 9680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-27 21:09:08.110  INFO 9680 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2021-05-27 21:09:08.110  INFO 9680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1362 ms
+2021-05-27 21:09:08.225  INFO 9680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-27 21:09:08.647  INFO 9680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-27 21:09:08.958  INFO 9680 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-27 21:09:09.509  INFO 9680 --- [main] liquibase.changelog                      : Reading from sqa_04.DATABASECHANGELOG
+2021-05-27 21:09:09.571  INFO 9680 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-27 21:09:09.579  INFO 9680 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2021-05-27 21:09:09.580  WARN 9680 --- [main] liquibase.hub                            : Skipping auto-registration
+2021-05-27 21:09:09.590  INFO 9680 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2021-05-27 21:09:09.675  INFO 9680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-27 21:09:09.744  INFO 9680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-05-27 21:09:09.888  INFO 9680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-27 21:09:10.002  INFO 9680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-27 21:09:10.525  INFO 9680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-27 21:09:10.532  INFO 9680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-27 21:09:11.061  WARN 9680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-27 21:09:11.116  INFO 9680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-27 21:09:11.180  INFO 9680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-27 21:09:11.407  INFO 9680 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-27 21:09:11.442  INFO 9680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-27 21:09:11.443  INFO 9680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-27 21:09:11.443  INFO 9680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1622124551441
+2021-05-27 21:09:12.088  INFO 9680 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = notification-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2021-05-27 21:09:12.111  INFO 9680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-27 21:09:12.111  INFO 9680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-27 21:09:12.111  INFO 9680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1622124552111
+2021-05-27 21:09:12.113  INFO 9680 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Subscribed to topic(s): email-notification
+2021-05-27 21:09:12.115  INFO 9680 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-05-27 21:09:12.130  INFO 9680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2021-05-27 21:09:12.140  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Cluster ID: LSeqtu0rSJW9GlEoxlKnBg
+2021-05-27 21:09:12.145  INFO 9680 --- [main] c.p.s.SqaWaterMoneyManagementApplication : Started SqaWaterMoneyManagementApplication in 6.278 seconds (JVM running for 7.34)
+2021-05-27 21:09:12.969  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2021-05-27 21:09:12.978  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-27 21:09:13.021  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] (Re-)joining group
+2021-05-27 21:09:13.077  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Finished assignment for group at generation 1: {consumer-notification-group-1-897a706e-7bf9-4a2e-8da3-6def54217916=Assignment(partitions=[email-notification-0, email-notification-1])}
+2021-05-27 21:09:13.167  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Successfully joined group with generation 1
+2021-05-27 21:09:13.170  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Adding newly assigned partitions: email-notification-0, email-notification-1
+2021-05-27 21:09:13.184  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Found no committed offset for partition email-notification-0
+2021-05-27 21:09:13.184  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Found no committed offset for partition email-notification-1
+2021-05-27 21:09:13.192  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Found no committed offset for partition email-notification-0
+2021-05-27 21:09:13.192  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Found no committed offset for partition email-notification-1
+2021-05-27 21:09:13.206  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting offset for partition email-notification-0 to offset 0.
+2021-05-27 21:09:13.207  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Resetting offset for partition email-notification-1 to offset 0.
+2021-05-27 21:09:13.231  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : notification-group: partitions assigned: [email-notification-0, email-notification-1]
+2021-05-27 21:11:59.390  INFO 9680 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 21:11:59.390  INFO 9680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-27 21:11:59.391  INFO 9680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-27 21:12:25.980  WARN 9680 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-05-27 21:14:01.265  INFO 9680 --- [http-nio-8080-exec-7] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-05-27 21:14:01.277  WARN 9680 --- [http-nio-8080-exec-7] o.a.k.clients.producer.ProducerConfig    : The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-05-27 21:14:01.278  INFO 9680 --- [http-nio-8080-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.4.1
+2021-05-27 21:14:01.278  INFO 9680 --- [http-nio-8080-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c57222ae8cd7866b
+2021-05-27 21:14:01.278  INFO 9680 --- [http-nio-8080-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1622124841278
+2021-05-27 21:14:01.282  INFO 9680 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: LSeqtu0rSJW9GlEoxlKnBg
+2021-05-27 21:14:01.309  INFO 9680 --- [http-nio-8080-exec-7] c.p.sqa.service.kafka.KafkaPublisherIml  : send message to order publisher completed: Leonard
+2021-05-27 21:14:01.350  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:05.989  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:05.992 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:05.996  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:10.210  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:10.210 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:10.213  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:14.255  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:14.256 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:14.260  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:18.374  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:18.374 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:18.376  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:22.425  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:22.426 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:22.428  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:26.469  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:26.470 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:26.474  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:30.350  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:30.351 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:30.355  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:34.316  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:34.317 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:34.325  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:38.221  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-notification-group-1, groupId=notification-group] Seeking to offset 0 for partition email-notification-1
+2021-05-27 21:14:38.223 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Error handler threw an exception
+
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.SeekUtils.seekOrRecover(SeekUtils.java:157) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.SeekToCurrentErrorHandler.handle(SeekToCurrentErrorHandler.java:113) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 10 common frames omitted
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+
+2021-05-27 21:14:38.231  INFO 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.p.s.service.kafka.KafkaSubscriberIml   : receive
+2021-05-27 21:14:42.217 ERROR 9680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.SeekToCurrentErrorHandler        : Backoff FixedBackOff{interval=0, currentAttempts=10, maxAttempts=9} exhausted for ConsumerRecord(topic = email-notification, partition = 1, leaderEpoch = 0, offset = 0, CreateTime = 1622124841296, serialized key size = 4, serialized value size = 252, headers = RecordHeaders(headers = [], isReadOnly = false), key = test, value = CustomerInvoiceDTO(id=2, newWaterIndexUsed=200, oldWaterIndexUsed=0, timeUsing=null, customer=CustomerDTO(id=1, name=Leonard, email=tha.asc, phoneNumber=0373329203, address=AddressDTO(id=1, numberHouse=cl3, street=Vu An, district=Kien Xuong, city=Thai Binh))))
+
+org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public boolean com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(com.ptit.sqa.dto.response.CustomerInvoiceDTO,org.springframework.kafka.support.Acknowledgment)' threw exception; nested exception is java.lang.RuntimeException: Send Email to customer fail; nested exception is java.lang.RuntimeException: Send Email to customer fail
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2114) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeErrorHandler(KafkaMessageListenerContainer.java:2102) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2001) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1928) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1814) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:1531) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1178) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1075) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.lang.RuntimeException: Send Email to customer fail
+	at com.ptit.sqa.service.kafka.KafkaSubscriberIml.HandlerEventSendEmailNotification(KafkaSubscriberIml.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:171) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:120) ~[spring-messaging-5.3.5.jar:5.3.5]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:48) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:330) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:86) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:51) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2069) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2051) ~[spring-kafka-2.6.7.jar:2.6.7]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1988) ~[spring-kafka-2.6.7.jar:2.6.7]
+	... 8 common frames omitted
+

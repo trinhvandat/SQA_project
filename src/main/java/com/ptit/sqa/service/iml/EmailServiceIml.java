@@ -37,6 +37,9 @@ public class EmailServiceIml implements EmailService {
 
     private final String WATER_COMPANY_SIGN = "Công ty nước sạch Thủy Long";
 
+    /*
+    Send email notification for customer: the bill
+     */
     @Override
     public boolean noticePaymentBill(CustomerInvoiceDTO invoice) {
         Mail mail = buildMailEntity(invoice);
@@ -63,8 +66,10 @@ public class EmailServiceIml implements EmailService {
         }
     }
 
+    /*
+    Create the mail body, prepare for sending email
+     */
     private Mail buildMailEntity(CustomerInvoiceDTO invoice){
-
         Mail mail = Mail.builder()
                 .to(invoice.getCustomer().getEmail())
                 .htmlTemplate(new Mail.HtmlTemplate("sample", buildMailProperties(invoice)))
@@ -72,7 +77,10 @@ public class EmailServiceIml implements EmailService {
                 .build();
         return mail;
     }
-    
+
+    /*
+    Add properties for email html form
+     */
     private Map<String, Object> buildMailProperties(CustomerInvoiceDTO invoice){
         Map<String, Object> mailProperties = new HashMap<String, Object>();
         mailProperties.put("name", invoice.getCustomer().getName());
@@ -90,6 +98,9 @@ public class EmailServiceIml implements EmailService {
         return mailProperties;
     }
 
+    /*
+    Get customer address
+     */
     private String getAddress(AddressDTO address){
         return String.format(
                 "%s, %s, %s, %s",
@@ -100,27 +111,42 @@ public class EmailServiceIml implements EmailService {
         );
     }
 
+    /*
+    Get html content from email html
+     */
     private String getHtmlContent(Mail mail) {
         Context context = new Context();
         context.setVariables(mail.getHtmlTemplate().getProps());
         return templateEngine.process(mail.getHtmlTemplate().getTemplate(), context);
     }
 
+    /*
+    Get total price
+     */
     private float getTotal(int oldIndex, int newIndex){
         float totalWithoutVAT = (float) ((newIndex - oldIndex) * unitPrice);
         return totalWithoutVAT;
     }
 
+    /*
+    Add taxes from total
+     */
     private float getTotalWithTax(int oldIndex, int newIndex){
         float totalWithoutVAT = (float) ((newIndex - oldIndex) * unitPrice);
         return (float) (totalWithoutVAT * 1.05);
     }
 
+    /*
+    Get current month and year
+     */
     private String getCurrentMonth(){
         LocalDate dateNow = LocalDate.now();
         return String.format("%s %s %s", dateNow.getMonth().getValue(), "năm", dateNow.getYear());
     }
 
+    /*
+    Send callback: send mail to admin
+     */
     private void sendMailToAdmin(String invalidEmail, String customer){
         final String adminEmail = "trinhvandat90399@gmail.com";
         final String errorSendMailSubject = "Send bill to customer fail";
